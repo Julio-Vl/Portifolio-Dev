@@ -1,0 +1,90 @@
+:root {
+  /* (defina aqui apenas variáveis, como você já faz) */
+}
+
+/* fundo da página */
+body {
+  background: url(../image/Background_Intro.png) no-repeat ;
+  background-size: cover;
+
+  
+ 
+}
+
+/* imagem redonda com borda */
+.julio {
+  width: 206px;
+  height: 206px;
+  border-radius: 50%;
+  border: 4px solid var(--red);
+  object-fit: cover;
+}
+
+/* conteúdo principal */
+.intro {
+  padding: 120px 20px;
+  text-align: center;
+}
+
+/* títulos */
+.intro h2 {
+  font: var(--Subtitle);
+}
+.intro h1 {
+  font: var(--title-lg);
+}
+
+/* destaque vermelho */
+.red {
+  color: var(--red);
+}
+
+/* parágrafo */
+.intro p {
+  font: var(--texto-sm);
+}
+
+/* chips de tecnologia */
+.tecnologias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.tech {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 90px;
+  background: none;
+  font: var(--texto-md);
+  color: var(--gray-500);
+}
+
+.tech img {
+  width: 20px;
+  height: 20px;
+}
+
+/* filtros para colorir apenas os ícones */
+.tech.github img {
+  filter: brightness(0) saturate(100%) invert(75%) sepia(9%) saturate(469%) hue-rotate(169deg) brightness(94%) contrast(85%);
+}
+.tech.html img {
+  filter: brightness(0) saturate(100%) invert(33%) sepia(86%) saturate(747%) hue-rotate(344deg) brightness(100%) contrast(101%);
+}
+.tech.css img {
+  filter: brightness(0) saturate(100%) invert(37%) sepia(81%) saturate(635%) hue-rotate(177deg) brightness(92%) contrast(93%);
+}
+.tech.js img {
+  filter: brightness(0) saturate(100%) invert(81%) sepia(13%) saturate(614%) hue-rotate(6deg) brightness(93%) contrast(92%);
+}
+.tech.react img {
+  filter: brightness(0) saturate(100%) invert(70%) sepia(11%) saturate(1033%) hue-rotate(182deg) brightness(93%) contrast(92%);
+}
+.tech.node img {
+  filter: brightness(0) saturate(100%) invert(67%) sepia(24%) saturate(690%) hue-rotate(47deg) brightness(94%) contrast(91%);
+}
