@@ -1,0 +1,60 @@
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.card {
+  background-color: var(--gray-100); /* tom intermediário de cinza */
+  border-radius: 12px;
+  padding: 16px;
+  text-align: left;
+  color: white;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 0 4px var(--red); /* borda em destaque ao passar o mouse */
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.card h2 {
+  font: var(--title-sm);
+  margin-bottom: 8px;
+}
+
+.card p {
+  font: var(--texto-sm);
+  color: var(--gray-500);
+}
+.projetos {
+  text-align: center;
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.projetos h3 {
+  font: var(--Subtitle);
+  color: var(--gray-400);
+  margin-bottom: 8px;
+}
+
+.projetos h3 span {
+  color: var(--red);
+}
+
+.projetos h2 {
+  font: var(--title-md);
+  color: var(--gray-600);
+  margin-bottom: 40px;
+}

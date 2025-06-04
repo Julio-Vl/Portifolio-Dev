@@ -2,13 +2,9 @@
   /* (defina aqui apenas variáveis, como você já faz) */
 }
 
-/* fundo da página */
-body {
-  background: url(../image/Background_Intro.png) no-repeat ;
+header {
+  background: url("../image/Background_Intro.png") no-repeat center center;
   background-size: cover;
-
-  
- 
 }
 
 /* imagem redonda com borda */
@@ -78,6 +74,9 @@ body {
   height: 20px;
   display: block;
 }
+
+
+
 /* filtros para colorir apenas os ícones */
 .tech.github img {
   filter: brightness(0) saturate(100%) invert(75%) sepia(9%) saturate(469%) hue-rotate(169deg) brightness(94%) contrast(85%);
@@ -113,5 +112,5 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 94px;
+  padding: 200px;
 }
