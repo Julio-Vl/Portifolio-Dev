@@ -78,9 +78,6 @@ body {
   height: 20px;
   display: block;
 }
-
-
-
 /* filtros para colorir apenas os ícones */
 .tech.github img {
   filter: brightness(0) saturate(100%) invert(75%) sepia(9%) saturate(469%) hue-rotate(169deg) brightness(94%) contrast(85%);
