@@ -13,22 +13,27 @@ body {
 
 /* imagem redonda com borda */
 .julio {
-  width: 206px;
-  height: 206px;
+  width: 152px;
+  height: 152px;
   border-radius: 50%;
+  margin-top: 30px;
   border: 4px solid var(--red);
   object-fit: cover;
+  margin-bottom: 26px;
 }
 
 /* conteúdo principal */
 .intro {
-  padding: 120px 20px;
+  padding: 80px 20px;
   text-align: center;
+  max-width: 690px;       /* limite de largura */
+  margin: 0 auto;         /* centraliza horizontalmente */
 }
 
 /* títulos */
 .intro h2 {
   font: var(--Subtitle);
+  padding: 20px;
 }
 .intro h1 {
   font: var(--title-lg);
@@ -47,27 +52,34 @@ body {
 /* chips de tecnologia */
 .tecnologias {
   display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
   justify-content: center;
-  padding: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 40px 20px;
+  margin: auto;
+  max-width: 1040px; 
 }
 
 .tech {
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 8px 16px;
-  border-radius: 90px;
-  background: none;
+  padding: 6px 14px;
+  background-color: var(--gray-300); /* ou #2a2d34 */
+  border-radius: 999px;
+  color: var(--gray-600); /* texto */
   font: var(--texto-md);
-  color: var(--gray-500);
+  transition: background-color 0.3s;
 }
 
 .tech img {
   width: 20px;
   height: 20px;
+  display: block;
 }
+
+
 
 /* filtros para colorir apenas os ícones */
 .tech.github img {
@@ -87,4 +99,22 @@ body {
 }
 .tech.node img {
   filter: brightness(0) saturate(100%) invert(67%) sepia(24%) saturate(690%) hue-rotate(47deg) brightness(94%) contrast(91%);
+}
+
+.tech {
+  color: var(--gray-500); /* cor do ícone e do texto */
+}
+
+.tech.github { color: var(--gray-400); }
+.tech.html   { color: orangered; }
+.tech.css    { color: steelblue; }
+.tech.js     { color: #f0db4f; }
+.tech.react  { color: #61dafb; }
+.tech.node   { color: #83CD29; }
+
+.SetaBaixo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 94px;
 }
