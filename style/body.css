@@ -9,7 +9,7 @@
 
 .card {
   background-color: var(--gray-100); /* tom intermediário de cinza */
-  border-radius: 12px;
+  border-radius: 24px;
   padding: 16px;
   text-align: left;
   color: white;
@@ -57,4 +57,58 @@
   font: var(--title-md);
   color: var(--gray-600);
   margin-bottom: 40px;
+}
+
+.service-container {
+  font: var(--title-sm);
+  padding: 80px ;
+  text-align: center;
+  background-color: var(--gray-100);
+  margin: 0 auto;
+  height: 500px;
+}
+
+.cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Card menor que o original */
+  justify-content: center;
+  gap: 24px; /* Consistente com .cards-container */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.CARD_trampo {
+  background-color: var(--gray-100); /* Ajuste pra fundo escuro, como na imagem */
+
+  padding: 16px;
+  border-radius: 12px;
+  text-align: center; /* Centraliza o texto como na imagem */
+  font: var(--title-sm);
+  width: 100%;
+  border: solid var(--gray-200);
+  color: white; /* Texto branco pra combinar com fundo escuro */
+  text-align: left;
+}
+
+.CARD_trampo img {
+  width: 48px; /* Tamanho fixo pro ícone */
+  height: 48px; /* Garante proporção */
+  margin-bottom: 20px; /* Espaço entre ícone e texto */
+ 
+}
+.service-container span{
+   margin-bottom: 8px;
+   display: block;
+   
+  
+}
+.service-container h2{
+  margin-bottom: 56px;
+  font: var(--title-sm);
+  color: var(--gray-600);
+  height: 19px;
+}
+.service-container p{
+   font: var(--title-sm);
+   color: var(--gray-500);
 }

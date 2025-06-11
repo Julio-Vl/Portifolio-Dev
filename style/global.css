@@ -7,6 +7,18 @@
 html, body {
   height: 100%;
 }
+a {
+  color: #ffffff; /* cor padrão */
+  text-decoration: none;
+}
+
+a:visited {
+  color: #ffffff; /* evita o roxo padrão */
+}
+
+a:hover {
+  color: #ff0000; /* exemplo de cor ao passar o mouse */
+}
 body {
   color: var(--gray-600);
   background-color: var(--gray-200); /* fundo padrão escuro */
